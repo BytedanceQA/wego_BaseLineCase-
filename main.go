@@ -28,7 +28,7 @@ func pluginLists() {
 	}
 	sort.Strings(fEnds)
 
-	Fprintln(os.Stderr, "Available backends:", strings.Join(bEnds, ", "))
+	fmt.Fprintln(os.Stderr, "Available backends:", strings.Join(bEnds, ", "))
 	fmt.Fprintln(os.Stderr, "Available frontends:", strings.Join(fEnds, ", "))
 }
 
