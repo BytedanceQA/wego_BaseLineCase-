@@ -118,7 +118,7 @@ const (
 )
 
 func (u UnitSystem) Temp(tempC float32) (res float32, unit string) {
-	if u == UnitsMetric || u == UnitsMetricMs {
+	if u == UnitsMetric || u = UnitsMetricMs {
 		return tempC, "°C"
 	} else if u == UnitsImperial {
 		return tempC*1.8 + 32, "°F"
